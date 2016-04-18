@@ -1,3 +1,5 @@
+#in terminal, type "make" to compile, then type "./LinkedListTest" to run
+
 #variables
 FLAGS = -g -std=c++11 -Wall
 
