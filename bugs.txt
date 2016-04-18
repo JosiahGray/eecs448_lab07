@@ -1,1 +1,1 @@
- 
+1. newly created linked list has size 1 instead of 0 (consequently, isEmpty returns false/0 instead of true/1 for a new list)
