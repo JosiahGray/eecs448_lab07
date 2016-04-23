@@ -463,6 +463,8 @@ void test3()
   int size2 = testList2.size();
   bool empty2 = testList2.isEmpty();
 
+  bool searchResult;
+
   //test adding 3 values to front of list
   cout << "Testing behavior when 3 values are added to front of the list:\n";
   cout << "\tadding 2 to the list\n";
@@ -512,8 +514,73 @@ void test3()
     cout << "FAIL TEST\n\n";
   }
 
+  //test searching for values in a list
+  searchResult = testList.search(2);
+  cout << "Testing behavior of search function:\n";
+  cout << "\t searching for 2 should return True or 1\n";
+  cout << "\tsearch(2) returns " << searchResult << "\n";
+  if(searchResult == true)
+  {
+    cout << "PASS TEST\n\n";
+  }
+  else
+  {
+    cout << "FAIL TEST\n\n";
+  }
+
+  searchResult = testList.search(3);
+  cout << "Testing behavior of search function:\n";
+  cout << "\t searching for 3 should return True or 1\n";
+  cout << "\tsearch(3) returns " << searchResult << "\n";
+  if(searchResult == true)
+  {
+    cout << "PASS TEST\n\n";
+  }
+  else
+  {
+    cout << "FAIL TEST\n\n";
+  }
+
+  searchResult = testList.search(4);
+  cout << "Testing behavior of search function:\n";
+  cout << "\t searching for 4 should return True or 1\n";
+  cout << "\tsearch(4) returns " << searchResult << "\n";
+  if(searchResult == true)
+  {
+    cout << "PASS TEST\n\n";
+  }
+  else
+  {
+    cout << "FAIL TEST\n\n";
+  }
+
+  searchResult = testList.search(10);
+  cout << "Testing behavior of search function:\n";
+  cout << "\t searching for 10 should return False or 0\n";
+  cout << "\tsearch(10) returns " << searchResult << "\n";
+  if(searchResult == false)
+  {
+    cout << "PASS TEST\n\n";
+  }
+  else
+  {
+    cout << "FAIL TEST\n\n";
+  }
+
+  searchResult = testList.search(1);
+  cout << "Testing behavior of search function:\n";
+  cout << "\t searching for 1 should return False or 0\n";
+  cout << "\tsearch(1) returns " << searchResult << "\n";
+  if(searchResult == false)
+  {
+    cout << "PASS TEST\n\n";
+  }
+  else
+  {
+    cout << "FAIL TEST\n\n";
+  }
+
   //test removing values from front of list
-  //cout << "*** Starting test again with new list ***\n\n";
   cout << "Testing behavior when removing from front of the list:\n";
   cout << "\tremoving front of the list\n";
   testList.removeFront();
