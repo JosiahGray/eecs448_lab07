@@ -1,7 +1,7 @@
-1. A newly created linked list has size 1 instead of 0.
+1. A newly created linked list appears to have size 1 instead of 0.
     (but size does increment when elements are added, so it is always 1 bigger than it should be)
 2. ^Consequently, isEmpty() returns false/0 instead of true/1 for a new (empty) list;
-    but for lists larger than size 0 it works fine.
+    but for lists larger than size 0 it works fine. (should be false/0)
     (this bug is most likely a consequence of the size being bugged, or it always returns false)
 3. addBack() appears to add to the front of the list instead of the back.
     (unless toVector() is bugged and returns a vector representation of the list in the wrong order)
